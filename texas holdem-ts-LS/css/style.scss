@@ -1,0 +1,106 @@
+* {
+  padding: 0%;
+  margin: 0;
+}
+
+body {
+  
+  // align-items: center;
+  // text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background: url("https://cdn.pixabay.com/photo/2016/03/17/23/09/poker-1264076_1280.jpg")
+    center center fixed no-repeat;
+  background-color: #23ac08;
+  // padding: 30px;
+}
+.wrapper {
+  width: 800px;
+  height: 450px;
+  background-size: cover;
+  background-color: #212526;
+  border: 10px inset black;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.623);
+  position: relative;
+  left:calc(50% - 400px);
+  border-radius: 20px;
+}
+
+h1 {
+  color: #000000;
+  text-align: center;
+  // font-size: 0px;
+  display: block;
+}
+
+.card {
+  width: 25px;
+  height: 40px;
+  background-color: white;
+  margin: 5px;
+  padding: 10px;
+  // text-align: center;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 0px 2px #d10101, 3px 4px 6px rgba(0, 0, 0, 0.381);
+
+  h3 {
+    // padding: 0px 0px 5px;
+    font-size: medium;
+  }
+  img {
+    width: 20px;
+    align-items: center;
+
+    padding: 0px 0px;
+  }
+}
+
+.operations {
+  position: absolute;
+  right: 60px;
+  bottom: 20px;
+  &__btn {
+    width: 50px;
+    padding: 4px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid lightblue;
+    &--fold {
+      background-color: #d10101;
+    }
+    &--rise,
+    &--call {
+      background-color: #23ac08;
+    }
+    &--cheack,
+    &--call {
+      background-color: #23ac08;
+    }
+    &--rangeInput{
+        position: absolute;
+        right: -135px;
+        transform: rotate(270deg);
+      width: 200px;
+      height: 0;
+     
+    }
+  }
+
+}
+
+.stage {
+  position: absolute;
+  top: calc(50% - 75px);
+  left: calc(50% - 160px);
+  display: flex;
+  // justify-content: center;
+  flex-wrap: wrap;
+  button {
+    position: absolute;
+  }
+}
+
+.table {
+  width: 100%;
+}

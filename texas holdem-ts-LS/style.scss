@@ -1,0 +1,90 @@
+* {
+  padding: 0%;
+  margin: 0;
+}
+
+body {
+  // align-items: center;
+  // text-align: center;
+  padding: 30px;
+}
+.wrapper {
+  width: 800px;
+  height: 450px;
+  // background: url("data:image/jpeg;base64,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")
+  // center center fixed no-repeat;
+  background-size: cover;
+  background-color: #212526;
+  border: 1px solid black;
+  position: relative;
+}
+
+h1 {
+  color: rgb(5, 91, 4);
+  text-align: center;
+  // font-size: 0px;
+  display: block;
+}
+
+.card {
+  width: 25px;
+  height: 40px;
+  background-color: white;
+  margin: 5px;
+  padding: 10px;
+  // text-align: center;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 0px 2px #d10101, 3px 4px 6px rgba(0, 0, 0, 0.381);
+
+  h3 {
+    // padding: 0px 0px 5px;
+    font-size: medium;
+  }
+  img {
+    width: 20px;
+    align-items: center;
+
+    padding: 0px 0px;
+  }
+}
+
+.operations {
+  position: absolute;
+  right: 60px;
+  bottom: 20px;
+  &__btn {
+    width: 50px;
+    padding: 4px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid lightblue;
+    &--fold {
+      background-color: #d10101;
+    }
+    &--rise,
+    &--call {
+      background-color: #23ac08;
+    }
+    &--cheack,
+    &--call {
+      background-color: #23ac08;
+    }
+  }
+}
+
+.stage {
+  position: absolute;
+  top: calc(50% - 75px);
+  left: calc(50% - 160px);
+  display: flex;
+  // justify-content: center;
+  flex-wrap: wrap;
+  button {
+    position: absolute;
+  }
+}
+
+.table {
+  width: 100%;
+}

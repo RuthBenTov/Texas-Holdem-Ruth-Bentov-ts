@@ -1,0 +1,210 @@
+.playerPanel {
+  width: 100px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+<<<<<<< HEAD
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.539);
+  margin: 5px;
+  position: absolute;
+}
+.playerPanel__chips {
+  display: contents;
+}
+.playerPanel__img img {
+  width: 100px;
+  height: 110px;
+=======
+  margin: 5px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+.playerPanel__inform {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.662);
+  color: white;
+  width: 60px;
+  text-align: center;
+  bottom: 0%;
+  left: calc(50% - 35px);
+  padding: 5px;
+  border: inherit 2px black;
+  border-radius: 8px;
+  box-shadow: 0px 0px 17px #1f1f1f;
+}
+.playerPanel__inform__chips {
+  display: contents;
+}
+.playerPanel__inform__userName {
+  width: fit-content;
+}
+.playerPanel__inputChips {
+  position: absolute;
+  width: 80px;
+  border: 1px solid black;
+}
+.playerPanel__inputChips img {
+  width: 30px;
+}
+.playerPanel__img {
+  position: relative;
+  left: calc(50% - 40px);
+}
+.playerPanel__img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: ridge 2px #a07903;
+  object-fit: cover;
+>>>>>>> 7473a3df52bf457216d9852d7b1fca3092105c27
+}
+
+#player1Panel {
+  bottom: 130px;
+  left: 50px;
+}
+<<<<<<< HEAD
+=======
+#player1Panel .playerPanel__inputChips {
+  top: 40px;
+  left: 120px;
+}
+>>>>>>> 7473a3df52bf457216d9852d7b1fca3092105c27
+
+#player2Panel {
+  top: 50px;
+  left: 100px;
+}
+<<<<<<< HEAD
+=======
+#player2Panel .playerPanel__inputChips {
+  top: 90px;
+  left: 100px;
+}
+>>>>>>> 7473a3df52bf457216d9852d7b1fca3092105c27
+
+#player3Panel {
+  top: 50px;
+  right: 100px;
+}
+<<<<<<< HEAD
+=======
+#player3Panel .playerPanel__inputChips {
+  top: 90px;
+  right: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+>>>>>>> 7473a3df52bf457216d9852d7b1fca3092105c27
+
+#player4Panel {
+  bottom: 130px;
+  right: 50px;
+}
+<<<<<<< HEAD
+=======
+#player4Panel .playerPanel__inputChips {
+  top: 40px;
+  right: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+>>>>>>> 7473a3df52bf457216d9852d7b1fca3092105c27
+
+.dealer {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+<<<<<<< HEAD
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.539);
+  margin: 5px;
+  position: absolute;
+}
+.dealer__img img {
+  width: 100px;
+}
+
+#dealer {
+  top: 20px;
+  right: calc(50% - 50px);
+}
+#dealer__head {
+  font-size: medium;
+  text-align: center;
+}
+=======
+  margin: 5px;
+  position: absolute;
+  top: 0px;
+  right: calc(50% - 50px);
+}
+.dealer__head {
+  font-size: medium;
+  text-align: center;
+}
+.dealer__img img {
+  width: 140px;
+}
+>>>>>>> 7473a3df52bf457216d9852d7b1fca3092105c27
+
+.myPanel {
+  position: absolute;
+  bottom: 0;
+<<<<<<< HEAD
+  left: calc(50% - 65px);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.539);
+=======
+  left: calc(50% - 56px);
+  display: flex;
+  flex-direction: column;
+>>>>>>> 7473a3df52bf457216d9852d7b1fca3092105c27
+  margin: 5px;
+  position: absolute;
+}
+.myPanel__img {
+  width: 50px;
+  height: 40px;
+}
+.myPanel__img img {
+  width: 45px;
+}
+.myPanel__cards {
+  display: flex;
+}
+.myPanel__cards .card {
+  margin: 3px;
+  width: 30px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 0px 1px #d10101, -3px 4px 6px rgba(0, 0, 0, 0.381);
+}
+.myPanel__cards .card h3 {
+  padding: 0px 0px 5px;
+  font-size: medium;
+}
+.myPanel__cards .card img {
+  width: 20px;
+  align-items: center;
+  padding: 0px 5px;
+}
+.myPanel__cards .card:nth-child(2) {
+  transform: rotate(10deg);
+  position: relative;
+  right: 10px;
+}
+.myPanel__cards .card:nth-child(1) {
+  transform: rotate(-14deg);
+  position: relative;
+  left: 8px;
+}
+.myPanel__chips {
+  color: white;
+  text-align: center;
+}

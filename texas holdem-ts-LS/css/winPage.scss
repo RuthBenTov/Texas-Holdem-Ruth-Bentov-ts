@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Butterfly+Kids&family=IBM+Plex+Sans+Hebrew&family=Lugrasimo&family=Noto+Serif:ital,wght@0,100;0,300;0,400;0,500;1,300&family=Open+Sans:wght@300;400&family=Oswald&family=Playfair+Display:ital,wght@1,500&family=Rubik:ital,wght@0,400;0,500;1,300;1,400&family=Ysabeau+Infant:ital,wght@0,300;1,300&family=Ysabeau+SC:wght@300&display=swap");
+body {
+  background: unset;
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+}
+
+.winWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .handName {
+    font-size: 100px;
+    letter-spacing: 2px;
+    padding: 10px;
+    color: white;
+    font-family: "Bebas Neue", "Helvetica Neue", Helvetica, Arial;
+    text-shadow: 4px 5px 10px rgb(2, 63, 63);
+    animation: blink 0.4s infinite;
+  }
+
+  .winPlayerDiv {
+    text-align: center;
+    &__information {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin: 30px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      &__winnerChips {
+        font-size: 30px;
+        width: 150px;
+        height: fit-content;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0px 0px 10px 5px  rgba(16, 81, 81, 0.463);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 6px;
+        animation: blink 2s ease-in-out;
+    }
+      img {
+        width: 80px;
+        border: 2px solid rgb(0, 82, 82);
+      }
+    }
+
+    &__handCard {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.card {
+  width: 32px;
+  height: 50px;
+  background-color: rgb(135, 135, 135);
+  margin: 5px;
+  padding: 10px;
+  // text-align: center;
+  border: 5px solid rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 0px 2px #d10101;
+
+  h3 {
+    // padding: 0px 0px 5px;
+    font-size: medium;
+  }
+  img {
+    width: 20px;
+    align-items: center;
+
+    padding: 0px 0px;
+  }
+}
+.partOfSet {
+  width: 32px;
+  height: 50px;
+  background-color: white;
+  margin: 5px;
+  padding: 10px;
+  // text-align: center;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 0px 2px #d10101,
+    0px 0px 12px 4px rgba(255, 255, 255, 0.826);
+
+  h3 {
+    // padding: 0px 0px 5px;
+    font-size: medium;
+  }
+  img {
+    width: 20px;
+    align-items: center;
+
+    padding: 0px 0px;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.01);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}

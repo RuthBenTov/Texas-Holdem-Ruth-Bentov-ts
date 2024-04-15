@@ -1,0 +1,190 @@
+.playerPanel {
+  width: 100px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+.playerPanel__inform {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.662);
+  color: white;
+  width: 60px;
+  text-align: center;
+  bottom: 0%;
+  left: calc(50% - 35px);
+  padding: 5px;
+  border: inherit 2px black;
+  border-radius: 8px;
+  box-shadow: 0px 0px 17px #1f1f1f;
+}
+.playerPanel__inform__chips {
+  display: contents;
+}
+.playerPanel__inform__userName {
+  width: fit-content;
+}
+.playerPanel__inputChips {
+  position: absolute;
+  display: flex;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.333);
+}
+.playerPanel__inputChips img {
+  width: 20px;
+}
+.playerPanel__img {
+  position: relative;
+  left: calc(50% - 40px);
+}
+.playerPanel__img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: ridge 2px #a07903;
+  object-fit: cover;
+}
+
+.panelInTurn img {
+  box-shadow: 0px 0px 15px 5px #ffe1ba;
+}
+
+.panelIsntActive img {
+  box-shadow: 0px 0px 15px 5px #c53333;
+  filter: brightness(0.2);
+}
+
+#player1Panel {
+  bottom: 130px;
+  left: 50px;
+}
+#player1Panel .playerPanel__inputChips {
+  top: 40px;
+  left: 120px;
+}
+
+#player2Panel {
+  top: 50px;
+  left: 100px;
+}
+#player2Panel .playerPanel__inputChips {
+  top: 90px;
+  left: 100px;
+}
+
+#player3Panel {
+  top: 50px;
+  right: 100px;
+}
+#player3Panel .playerPanel__inputChips {
+  top: 90px;
+  right: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#player4Panel {
+  bottom: 130px;
+  right: 50px;
+}
+#player4Panel .playerPanel__inputChips {
+  top: 40px;
+  right: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.dealer {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  position: absolute;
+  top: 0px;
+  right: calc(50% - 50px);
+}
+.dealer__chips {
+  font-size: large;
+  position: absolute;
+  left: 40%;
+  top: 100%;
+  text-align: center;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgba(166, 29, 29, 0.993);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.333);
+}
+.dealer__img img {
+  width: 140px;
+}
+
+.myPanel {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 56px);
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  position: absolute;
+}
+.myPanel__img {
+  position: relative;
+  left: calc(50% - 40px);
+  top: 50px;
+}
+.myPanel__img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: ridge 2px #a07903;
+  object-fit: cover;
+}
+.myPanel__cards {
+  display: flex;
+}
+.myPanel__cards .card {
+  margin: 3px;
+  width: 30px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 0px 1px #d10101, -3px 4px 6px rgba(0, 0, 0, 0.381);
+}
+.myPanel__cards .card h3 {
+  padding: 0px 0px 5px;
+  font-size: medium;
+}
+.myPanel__cards .card img {
+  width: 20px;
+  align-items: center;
+  padding: 0px 5px;
+}
+.myPanel__cards .card:nth-child(2) {
+  transform: rotate(10deg);
+  position: relative;
+  right: 10px;
+}
+.myPanel__cards .card:nth-child(1) {
+  transform: rotate(-14deg);
+  position: relative;
+  left: 8px;
+}
+.myPanel__chips {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.411);
+  border-radius: 10px;
+  text-align: center;
+  z-index: 4;
+}
+.myPanel #myTurnInput {
+  width: fit-content;
+  position: absolute;
+  left: 20%;
+  top: 10px;
+}

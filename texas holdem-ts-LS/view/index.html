@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Texas Holdem - unstoppable game</title>
+
+    <link rel="icon" type="image/png" href="../images/cards.png" />
+    
+    <script src="../script/dist/classes.js" defer></script>
+    <script src="../script/dist/moves.js" defer></script>
+    <script src="../script/dist/index.js" defer></script>
+    <script src="../script/dist/turns.js" defer></script>
+    <script src="../script/dist/pokerSets.js" defer></script>
+    <script src="../script/dist/win.js" defer></script>
+    <link rel="stylesheet" href="../css/dist/style.css" />
+    <link rel="stylesheet" href="../css/dist/players.css" />
+  </head>
+  <body onload="renderPlayers(), beginnerTurn()">
+    <h1>Texas Holdem Poker</h1>
+    <div class="wrapper">
+      <img class="table" src="../images/table.png" alt="" />
+      <div class="stage">
+       
+      </div>
+      
+      <div id="player0Panel" class="myPanel ">
+        <div id="" class="myPanel__img playerPanel__img">
+          <img src="#" alt="" />
+        </div>
+        <h4 class="myPanel__chips chipsPlayer"></h4>
+        <div class="myPanel__cards"></div>
+        <div id="myTurnInput" class="playerPanel__inputChips">
+          <!-- <img src="../images/casino-chip.png" alt="" /> -->
+        </div>
+      </div>
+
+      <div class="operations">
+        <button
+          class="operations__btn operations__btn--check"
+          onclick="myPlayerHandleCheck()">
+          check
+        </button>
+        <button
+        class="operations__btn operations__btn--fold"
+        onclick="myPlayerHandleFold()">
+          fold
+        </button>
+        <button
+        class="operations__btn operations__btn--call"
+          onclick="myPlayerHandleCall()">
+          call
+        </button>
+        <button
+          class="operations__btn operations__btn--rise"
+          onclick="myPlayerHandleRise()">
+          rise
+        </button>
+      </div>
+
+      <!-- -----1------- -->
+      <div id="player1Panel" class="playerPanel">
+        <div id="player1Img" class="playerPanel__img">
+          <img src="" alt="" />
+        </div>
+        <div id="player1Cards" class="playerPanel__cards"></div>
+        <div class="playerPanel__inform">
+          <h5 class="playerPanel__inform__userName" id="player1Name"></h5>
+          <div class="playerPanel__inform__chips chipsPlayer" id="player1Chips"></div>
+        </div>
+        <div class="playerPanel__inputChips">
+          <!-- <img src="../images/casino-chip.png" alt="" />
+            <h4></h4> -->
+        </div>
+      </div>
+      <!-- -----2------- -->
+      <div id="player2Panel" class="playerPanel">
+        <div id="player2Img" class="playerPanel__img">
+          <img src="" alt="" />
+        </div>
+        <div id="player2Cards" class="playerPanel__cards"></div>
+        <div class="playerPanel__inform">
+          <h5 class="playerPanel__inform__userName" id="player2Name"></h5>
+          <div class="playerPanel__inform__chips chipsPlayer" id="player2Chips"></div>
+        </div>
+        <div class="playerPanel__inputChips  ">
+          <!-- <img src="../images/casino-chip.png" alt="" />
+          <h4></h4> -->
+        </div>
+      </div>
+      <!-- ------3------ -->
+      <div id="player3Panel" class="playerPanel">
+        <div id="player3Img" class="playerPanel__img">
+          <img
+            src="https://cdn.pixabay.com/photo/2023/07/05/04/45/european-shorthair-8107433_1280.jpg"
+            alt="" />
+          </div>
+        <div id="player3Cards" class="playerPanel__cards"></div>
+        <div class="playerPanel__inform">
+          <h5 class="playerPanel__inform__userName" id="player3Name"></h5>
+          <div class="playerPanel__inform__chips  chipsPlayer" id="player3Chips"></div>
+        </div>
+        <div class="playerPanel__inputChips">
+          <!-- <img src="../images/casino-chip.png" alt="" />
+            <h4></h4> -->
+          </div>
+        </div>
+      <!-- -----4----- -->
+      <div id="player4Panel" class="playerPanel">
+        <div id="player4Img" class="playerPanel__img">
+          <img
+          src="https://cdn.pixabay.com/photo/2023/07/05/04/45/european-shorthair-8107433_1280.jpg"
+          alt="" />
+        </div>
+        <div id="player4Cards" class="playerPanel__cards"></div>
+        <div class="playerPanel__inform">
+          <h5 class="playerPanel__inform__userName" id="player4Name"></h5>
+          <div class="playerPanel__inform__chips  chipsPlayer" id="player4Chips"></div>
+        </div>
+        <div class="playerPanel__inputChips">
+          <!-- <img src="../images/casino-chip.png" alt="" />
+            <h4></h4> -->
+          </div>
+        </div>
+
+        <!-- --------------------- -->
+        <div id="dealer" class="dealer">
+          <div id="dealer" class="dealer__img">
+          <img src="../images/39bbec9fd2084b86be50641b3df5ee6f.avif" alt="" />
+        </div>
+        <!-- <h3 id="dealer__head">The dealer</h3> -->
+        <h4 class="dealer__chips"></h4>
+      </div>
+    </div>
+    
+  </body>
+  </html>
+  

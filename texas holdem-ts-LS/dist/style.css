@@ -1,0 +1,79 @@
+* {
+  padding: 0%;
+  margin: 0;
+}
+
+body {
+  padding: 30px;
+}
+
+.wrapper {
+  width: 800px;
+  height: 450px;
+  background-size: cover;
+  background-color: #212526;
+  border: 1px solid black;
+  position: relative;
+}
+
+h1 {
+  color: #055b04;
+  text-align: center;
+  display: block;
+}
+
+.card {
+  width: 25px;
+  height: 40px;
+  background-color: white;
+  margin: 5px;
+  padding: 10px;
+  border: 5px solid white;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 0px 2px #d10101, 3px 4px 6px rgba(0, 0, 0, 0.381);
+}
+.card h3 {
+  font-size: medium;
+}
+.card img {
+  width: 20px;
+  align-items: center;
+  padding: 0px 0px;
+}
+
+.operations {
+  position: absolute;
+  right: 60px;
+  bottom: 20px;
+}
+.operations__btn {
+  width: 50px;
+  padding: 4px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 1px solid lightblue;
+}
+.operations__btn--fold {
+  background-color: #d10101;
+}
+.operations__btn--rise, .operations__btn--call {
+  background-color: #23ac08;
+}
+.operations__btn--cheack, .operations__btn--call {
+  background-color: #23ac08;
+}
+
+.stage {
+  position: absolute;
+  top: calc(50% - 75px);
+  left: calc(50% - 160px);
+  display: flex;
+  flex-wrap: wrap;
+}
+.stage button {
+  position: absolute;
+}
+
+.table {
+  width: 100%;
+}
